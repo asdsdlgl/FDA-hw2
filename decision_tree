@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Pa &le; 850.5<br/>gini = 0.5<br/>samples = 7000<br/>value = [3567, 3433]<br/>class = Rain>, fillcolor="#e581390a"] ;
+1 [label=<gini = 0.0<br/>samples = 2461<br/>value = [2461, 0]<br/>class = Rain>, fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Humidity &le; 59.5<br/>gini = 0.369<br/>samples = 4539<br/>value = [1106, 3433]<br/>class = Sun>, fillcolor="#399de5ad"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<Temperature &le; 29.5<br/>gini = 0.133<br/>samples = 2743<br/>value = [196, 2547]<br/>class = Sun>, fillcolor="#399de5eb"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 2201<br/>value = [0, 2201]<br/>class = Sun>, fillcolor="#399de5ff"] ;
+3 -> 4 ;
+5 [label=<Humidity &le; 39.5<br/>gini = 0.462<br/>samples = 542<br/>value = [196, 346]<br/>class = Sun>, fillcolor="#399de56f"] ;
+3 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 346<br/>value = [0, 346]<br/>class = Sun>, fillcolor="#399de5ff"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 196<br/>value = [196, 0]<br/>class = Rain>, fillcolor="#e58139ff"] ;
+5 -> 7 ;
+8 [label=<Temperature &le; 29.5<br/>gini = 0.5<br/>samples = 1796<br/>value = [910, 886]<br/>class = Rain>, fillcolor="#e5813907"] ;
+2 -> 8 ;
+9 [label=<WindSpeed &le; 24.5<br/>gini = 0.474<br/>samples = 1444<br/>value = [558, 886]<br/>class = Sun>, fillcolor="#399de55e"] ;
+8 -> 9 ;
+10 [label=<gini = 0.397<br/>samples = 1218<br/>value = [332, 886]<br/>class = Sun>, fillcolor="#399de59f"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 226<br/>value = [226, 0]<br/>class = Rain>, fillcolor="#e58139ff"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 352<br/>value = [352, 0]<br/>class = Rain>, fillcolor="#e58139ff"] ;
+8 -> 12 ;
+}
